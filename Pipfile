@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 databricks = "*"
+pyyaml = "*"
+databricks-sql-connector = "*"
 
 [dev-packages]
 
