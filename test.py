@@ -5,9 +5,9 @@ import yaml
 with open('creds.yaml', 'r') as f:
     creds = yaml.safe_load(f)
 
-with sql.connect(server_hostname = creds['test_hostname'],
-                 http_path = creds['test_http_path'],
-                 access_token = creds['test_access_token']) as connection:
+with sql.connect(server_hostname = creds['hostname'],
+                 http_path = creds['http_path'],
+                 access_token = creds['access_token']) as connection:
     
     with connection.cursor() as cursor:
         cursor.execute("CREATE TABLE IF NOT EXISTS squares (x int, x_squared int)")
