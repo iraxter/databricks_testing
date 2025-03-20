@@ -1,3 +1,5 @@
 hostname: "YOUR-HOSTNAME-HERE" 
 http_path: "YOUR-HTTP-PATH-HERE"
 access_token: "YOUR-ACCESS-TOKEN-HERE"
+catalog: "YOUR-CATALOG-HERE"
+default_schema: "YOUR-DEFAULT-SCHEMA-HERE"

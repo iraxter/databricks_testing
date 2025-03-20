@@ -3,7 +3,7 @@
 
 ## Intro
 
-This is a basic template to set up Python infrastructure to run SQL syntax in a Databricks environment. Needs a functioning databricks instance and is currently set up for a Serverless SQL Warehouse but should work with a Databricks Cluster without much change.
+This is a basic template to set up Python infrastructure to run SQL syntax in a Databricks environment. Needs a functioning Databricks instance and is currently set up for a Serverless SQL Warehouse but should work with a Databricks Cluster without much change.
 
 ### Setup
 
@@ -15,9 +15,11 @@ This is a basic template to set up Python infrastructure to run SQL syntax in a 
 ### Contents
 
 - test.py
-    - simple connection script to read credentials yaml, connect to databricks, and populate then select from a simple example table
+    - scratch pad testing basic code and executing functions from utils.py
 - utils.py
     - utility functions for executing sql strings via function call, creating and populating tables from list inputs, and more. will continue to add to this, may explore additional functions or expanding to a class in the future.
+- test_csv.csv
+    - test file to read into csv_to_sql function
 
 ### Additional Documentation
 

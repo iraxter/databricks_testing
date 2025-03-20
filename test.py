@@ -1,7 +1,9 @@
 from databricks import sql
-import os
+from utils import *
 import yaml
 
+# Raw test code for reference, moving on to function test code below
+'''
 with open('creds.yaml', 'r') as f:
     creds = yaml.safe_load(f)
 
@@ -23,3 +25,14 @@ with sql.connect(server_hostname = creds['hostname'],
 
     for row in result:
       print(row)
+'''
+
+creds = read_credentials('creds.yaml')
+
+csv_to_sql(creds, 'test_csv.csv', 'test_csv_table', if_exists='replace')
+
+sql_string = f"SELECT * FROM {creds['default_catalog']}.{creds['default_schema']}.test_csv_table LIMIT 10"
+
+result = exec_sql(creds, sql_string)
+
+print(result)

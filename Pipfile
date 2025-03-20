@@ -7,6 +7,8 @@ name = "pypi"
 databricks = "*"
 pyyaml = "*"
 databricks-sql-connector = "*"
+databricks-sqlalchemy = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 
